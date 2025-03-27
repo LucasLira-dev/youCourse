@@ -14,26 +14,21 @@
     height: 8px; /* Altura da barra de rolagem horizontal */
 }
 
-::-webkit-scrollbar-thumb {
-   /* background-color: #e11919; /* Cor da barra de rolagem */
-    background-color: transparent;
-    border-radius: 4px; /* Bordas arredondadas */
+@media screen and (max-width: 1000px) {
+    ::-webkit-scrollbar-thumb {
+        /* background-color: #e11919; /* Cor da barra de rolagem */
+         background-color: transparent;
+         border-radius: 4px; /* Bordas arredondadas */
+     }
+     
+     ::-webkit-scrollbar-track {
+         background-color: transparent;
+         /* Cor do fundo da barra de rolagem */
+     }
+    
 }
 
-::-webkit-scrollbar-track {
-    background-color: #ef4444; 
-    background-color: transparent;
-    /* Cor do fundo da barra de rolagem */
-}
 
-/* Esconde a barra de rolagem mas mantém a funcionalidade */
-.scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari and Opera */
- }
 
  @media screen and (min-width: 1000px) {
     ::-webkit-scrollbar-thumb {
