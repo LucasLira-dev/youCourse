@@ -1,5 +1,5 @@
 {
-  "homepage": "https://LucasLira-dev.github.io/youCourse",
+  "homepage": "https://github.com/LucasLira-dev/youCourse",
   "name": "my-app",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "prevdeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/LucasLira-dev/youCourse.git"
   },
   "dependencies": {
     "react": "^19.0.0",

@@ -16,7 +16,7 @@ function Card({playlist}) {
     
 
     return (
-         <div className='flex flex-col items-center justify-center w-full p-4 m-4 rounded-lg bg-zinc-800'> 
+         <div className='flex flex-col items-center justify-center w-full p-4 m-4 rounded-lg bg-zinc-800 scrollbar-hide'> 
            {/* {playlists.map((playlist, index) => (
                 <div key={index} className='flex flex-col items-center justify-center w-[200px] sm:w-1/2 md:w-[200px]  lg:w-[18%] p-2 rounded-lg bg-zinc-800'>  */}
                     <div className='w-[300px] sm:w-[280px] md:w-[300px] lg:w-[200px] m-4'>
@@ -47,10 +47,15 @@ function Card({playlist}) {
                         Acessar
                     </Link>
                  </div>
-        //     ))}
+       //     ))}
         // </div> 
+        
+        
     )
 }
 
 export default Card;
    
+
+
+//className="w-full overflow-x-auto scrollbar-hide whitespace-nowrap space-x-4
