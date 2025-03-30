@@ -1,5 +1,4 @@
 import '../../App.css'
-import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -11,13 +10,10 @@ function Footer(){
             <div className='flex flex-row gap-2 text-3xl '>
 
                 <Link>
-                    <FaLinkedinIn/>
+                    <FaLinkedinIn
+                    className='hover:text-red-500'/>
                 </Link>
 
-                <Link>
-                     <FaFacebook className='hover:text-red-500'/>
-                </Link>
-             
                <Link to="https://github.com/LucasLira-dev" target='_blank'>
                     <FaGithub className='hover:text-red-500'/>
                </Link>

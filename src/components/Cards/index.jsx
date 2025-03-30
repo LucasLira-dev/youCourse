@@ -4,16 +4,19 @@ import '../../App.css'
 import { Link } from 'react-router-dom';
 import { MdExpandMore } from "react-icons/md";
 import { MdExpandLess } from "react-icons/md";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { MdOutlineFavorite } from "react-icons/md";
 
 function Card({playlist}) {
 
     const [showDetails, setShowDetails] = useState(false);
 
+    const [favorite, setFavorite] = useState(true);
+
     function toggleDetails() {
         setShowDetails(!showDetails);
     }
 
-    
 
     return (
          <div className='flex flex-col items-center justify-center w-full p-4 m-4 rounded-lg bg-zinc-800 scrollbar-hide'> 
@@ -23,6 +26,8 @@ function Card({playlist}) {
                         <img src={playlist.imgPlaylist} alt="" className='w-full h-[100px] rounded-t-lg' />
                     </div>
 
+
+                <div className='flex flex-row items-center '>
                     <div className='mb-[20px]  cursor-pointer' onClick={toggleDetails}>
                      {showDetails ? (
                       <MdExpandLess className='text-white text-[1.7rem] cursor-pointer' />
@@ -30,6 +35,14 @@ function Card({playlist}) {
                     <MdExpandMore className='text-white text-[1.7rem] cursor-pointer' />
                     )}
                     </div>
+
+                    <div className='mb-[20px] cursor-pointer'
+                    onClick={() => setFavorite(!favorite)}>
+                     {favorite ? (
+                      <MdOutlineFavoriteBorder className='text-white text-[1.7rem] '/>) : <MdOutlineFavorite className='text-white text-[1.7rem] '/>}
+                    </div>
+                </div>
+                 
 
 
                 {showDetails && (

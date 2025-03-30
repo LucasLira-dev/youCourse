@@ -5,6 +5,7 @@ import Cards from '../../components/Cards'
 import Footer from '../../components/Footer'
 import Category from '../../components/Category'
 import playlists from '../../db.json/playlists.json'
+import Banner from '../../components/Banner'
 
 
 const categories= [
@@ -26,6 +27,7 @@ function Home(){
     return(
         <div className="flex flex-col min-h-screen">
         <Header />
+        <Banner/>
         <Container>
             {categories.map((category, index) => (
                 <Category
