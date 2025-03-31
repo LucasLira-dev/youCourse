@@ -6,6 +6,7 @@ import Footer from '../../components/Footer'
 import Category from '../../components/Category'
 import playlists from '../../db.json/playlists.json'
 import Banner from '../../components/Banner'
+import ScrollToTopButton from '../../components/ScrollToTopButton'
 
 
 const categories= [
@@ -26,6 +27,7 @@ const filterPlaylists = (category) => {
 function Home(){
     return(
         <div className="flex flex-col min-h-screen">
+        <ScrollToTopButton />
         <Header />
         <Banner/>
         <Container>

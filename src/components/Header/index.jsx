@@ -15,9 +15,9 @@ function Header(){
             <nav>
                 <section className='flex space-x-5 cursor-pointer '>
                     <Link to="/youCourse" className='hover:text-slate-200 transition duration-300 ease-in-out' translate='no'>Home</Link>
-                    <Link to='/sobre' className='hover:text-slate-200 transition duration-300 ease-in-out'> Sobre </Link>
+                    <Link to='/youCourse/sobre' className='hover:text-slate-200 transition duration-300 ease-in-out'> Sobre </Link>
                     <Link
-                     to='/pesquisar'
+                     to='/youCourse/pesquisar'
                      className='hover:text-slate-200 transition duration-300 ease-in-out'> Pesquisar </Link>
                 </section>
             </nav>

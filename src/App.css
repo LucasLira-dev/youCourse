@@ -30,7 +30,7 @@
 
 
 
- @media screen and (min-width: 1000px) {
+ @media screen and (min-width: 1281px) {
     ::-webkit-scrollbar-thumb {
         background-color: #e11919; /* Cor da barra de rolagem */
          border-radius: 4px; /* Bordas arredondadas */

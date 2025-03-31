@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import Loader from '../../components/Loader';
 
 import playlist from '../../db.json/playlists.json';
+import ScrollToTopButton from '../../components/ScrollToTopButton';
 
 
 
@@ -32,7 +33,9 @@ function Pesquisar(){
     const resultados = cursosFiltrados(search)
 
     return(
+        
         <Container>
+        <ScrollToTopButton />
         <Header/>
         <div className='flex flex-col justify-center items-center mt-[60px] bg-black'>
             <input 
