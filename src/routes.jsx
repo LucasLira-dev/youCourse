@@ -6,15 +6,15 @@ import FavoritesProvider from './components/contexts/Favorites';
 
 function AppRoutes(){
     return(
-        <BrowserRouter >
+        <BrowserRouter basename='/youCourse'>
             <Routes>
-                <Route path='/youCourse' element={<Home/>}>
+                <Route path='/' element={<Home/>}>
                 </Route>
-                <Route path='/youCourse/sobre' element={<About/>}>
+                <Route path='/sobre' element={<About/>}>
                 </Route>
-                <Route path='/youCourse/pesquisar' element={<Pesquisar/>}>
+                <Route path='/pesquisar' element={<Pesquisar/>}>
                 </Route>
-                <Route path='/youCourse/*' element={<h1> Página não encontrada </h1>}>
+                <Route path='/*' element={<h1> Página não encontrada </h1>}>
                 </Route>
             </Routes>
         </BrowserRouter>
