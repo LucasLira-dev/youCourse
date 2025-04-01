@@ -2,13 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
+    <title>Redirecionando</title>
     <script>
-      sessionStorage.redirect = location.pathname;
-      location.replace('/youCourse/');
+      const path = window.location.pathname.split('/').slice(2).join('/');
+      sessionStorage.redirect = path;
+      window.location.href = '/youCourse/#' + (path || '');
     </script>
   </head>
   <body>
-    <noscript>Redirecting to home page...</noscript>
+    <noscript>
+      Redirecionando... <a href="/youCourse/">Clique aqui</a> se não for redirecionado.
+    </noscript>
   </body>
 </html>
