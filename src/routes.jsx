@@ -14,7 +14,7 @@ function AppRoutes(){
                 </Route>
                 <Route path='/youCourse/pesquisar' element={<Pesquisar/>}>
                 </Route>
-                <Route path='*' element={<h1>Not Found</h1>}>
+                <Route path='/youCourse/*' element={<h1> Página não encontrada </h1>}>
                 </Route>
             </Routes>
         </BrowserRouter>
