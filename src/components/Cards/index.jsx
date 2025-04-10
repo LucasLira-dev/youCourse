@@ -50,7 +50,7 @@ function Card({ playlist, id }) {
   return (
 
     <div className="flex flex-col items-center justify-center w-full p-4 m-4 rounded-lg bg-zinc-800 scrollbar-hide">
-      <div className="w-[300px] sm:w-[280px] md:w-[300px] lg:w-[200px] m-4">
+      <div className="w-[250px] sm:w-[260px] md:w-[300px] lg:w-[200px] m-4">
         <img
           src={playlist.imgPlaylist}
           alt={playlist.title || "Playlist"}
@@ -91,6 +91,8 @@ function Card({ playlist, id }) {
         Acessar
       </Link>
     </div>
+
+   
   );
 }
 
@@ -99,3 +101,5 @@ export default Card;
 //className="w-full overflow-x-auto scrollbar-hide whitespace-nowrap space-x-4
 
 /* */
+
+

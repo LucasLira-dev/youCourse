@@ -10,10 +10,10 @@ function Favoritos(){
     const { favorites, setFavorite } = useFavoriteContext();
 
     return(
-        <div>
+        <div className="flex flex-col min-h-screen ">
         <Header />
         <Container className="flex-grow">
-            <div className="min-h-[80vh] flex flex-col items-center justify-start text-center mt-[60px] p-8 bg-zinc-900 text-white rounded-lg shadow-lg md:min-h-[80vh]">
+            <div className="min-h-[82vh] flex flex-col items-center justify-start text-center mt-[60px] p-8 bg-zinc-900 text-white rounded-lg shadow-lg md:min-h-[86.5vh] lg:min-h-[79vh]">
                     <h1 className="text-4xl font-bold mb-4 text-white">Seus Favoritos</h1>
                     {favorites.length > 0 ? (
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

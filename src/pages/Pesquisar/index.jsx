@@ -33,8 +33,8 @@ function Pesquisar(){
     const resultados = cursosFiltrados(search)
 
     return(
-        
-        <Container>
+        <div className='flex flex-col min-h-screen'>
+        <Container className='flex-grow'>
         <ScrollToTopButton />
         <Header/>
         <div className='flex flex-col justify-center items-center mt-[60px] bg-black'>
@@ -49,7 +49,7 @@ function Pesquisar(){
              />
 
             {loading ? <Loader/> : (
-              <div className='flex flex-wrap mt-4 gap-4  rounded-lg w-full min-h-[68vh] overflow-x-hidden'>
+             <div className='flex flex-wrap mt-4 gap-4  rounded-lg w-full min-h-[68vh] overflow-x-hidden'>
                     {search.length > 0 && resultados.length ? (
                         cursosFiltrados(search).map((course, index) => (
                             <div key={index} className='w-[90vw] mr-[3px] sm:w-[280px] md:w-[330px] lg:w-[280px] '>
@@ -70,6 +70,7 @@ function Pesquisar(){
         </div>
         <Footer/>
         </Container>
+        </div>
     )
 }
 
